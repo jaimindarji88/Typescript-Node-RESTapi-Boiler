@@ -38,3 +38,6 @@ app.use(session({
 app.use(lusca.xframe("SAMEORIGIN"));
 app.use(lusca.xssProtection(true));
 
+app.listen("port", () => {
+  console.log("listening on port", 3000)
+});
